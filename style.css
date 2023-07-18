@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+#todoList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.congratulation-message {
+  font-weight: bold;
+  background: linear-gradient(45deg, red, blue, green, rgb(255, 0, 217));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+#todoList input {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+#todoItems {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+li button {
+  margin-left: 10px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: green;
+  opacity: 0.7;
+  transition: opacity 0.3s, color 0.8s;
+}
+
+.deleted {
+  text-decoration: none;
+  color: red;
+  opacity: 1;
+  transition: opacity 0.3s, color 1.3s;
+}
